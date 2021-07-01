@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>C4_EJEMPLO4</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<style type="text/css">
+		body {
+			padding:40px;
+			font-size:20px;
+			font-family:helvetica;
+		}
+	</style>
+<script type="text/javascript">
+
+	function distanciap1p2 (p1x,p2x,p1y,p2y){
+		var resultado = Math.sqrt(Math.pow(p1x-p2x,2) + Math.pow(p1y-p2y,2));
+		return resultado;
+	}
+
+    function distanciap2p3 (p2x,p3x,p2y,p3y){
+		var resultado = Math.sqrt(Math.pow(p2x-p3x,2) + Math.pow(p2y-p3y,2));
+		return resultado;
+	}
+
+    function distanciap3p1 (p3x,p1x,p3y,p1y){
+		var resultado = Math.sqrt(Math.pow(p3x-p1x,2) + Math.pow(p3y-p1y,2));
+		return resultado;
+	}
+
+
+    function menor (p3x,p1x,p3y,p1y){
+		var resultado = Math.sqrt(Math.pow(p3x-p1x,2) + Math.pow(p3y-p1y,2));
+		return resultado;
+	}
+
+
+
+
+	var x1,x2,x3,y1,y2,y3;
+	
+	var p1x = prompt("Dame tu cordenada x del punto 1: ","");
+    var p1y = prompt("Dame tu cordenada y del punto 1:","");
+	var p2x = prompt("Dame tu cordenada x del punto 2: ","");
+    var p2y = prompt("Dame tu cordenada y del punto 2:","");
+    var p3x = prompt("Dame tu cordenada x del punto 3:","");
+	var p3y = prompt("Dame tu cordenada y del punto 3:","");
+
+
+
+	x1 = parseInt(p1x);
+    y1 = parseInt(p1y);
+	x2 = parseInt(p2x);
+    y2 = parseInt(p2y);
+    x3 = parseInt(p3x);
+	y3 = parseInt(p3y);
+
+
+
+	/*
+
+        capture las coordenadas de 3 puntos en el plano determine a travez de una funcion la distancia entre los puntos
+        determine cual fue la distancia  mayor y la distancia menor. esto ultimo se hace en dos funciones independietens 
+
+
+
+
+
+
+
+
+
+		Se puede hacer en una sola línea la captura de los datos y convertirlos a enteros.
+		Ejemplo: var x = parseInt(prompt("Dame un valor entero: ",""));
+
+		Para el caso de valors reales se hace con parseFloat()
+	*/
+
+	//lamamos a la función declarada anteriormente y pasamos los valores.
+
+
+ 
+
+
+	var dist = distanciap1p2 (p1x,p2x,p1y,p2y);
+	document.write("El resultado de la distancia de P1 a P2  es: " + dist);
+    var dist2 = distanciap2p3 (p2x,p3x,p2y,p3y);
+	document.write("<br><br>El resultado de la distancia P2 a P3 es: " + dist2);
+    var dist3 = distanciap3p1 (p3x,p1x,p3y,p1y);
+	document.write("<br><br>El resultado de la distancia de P3 a P1  es: " + dist3);
+
+    function mayor (dist,dist2,dist3){
+		var max=0;
+
+        if ((dist>dist2) && (dist2>dist3)) max = dist;
+        
+        else if ((dist2>dis) && (dist2>dist3)) max = dist2;
+        
+        else if ((dist3>dis) && (dist3>dist1)) max = dist3;
+        
+        return max;
+	}
+
+
+    var distmayor = mayor (dist,dist2,dist3);
+    document.write("<br><br>la distancia mayor es: " + distmayor);
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

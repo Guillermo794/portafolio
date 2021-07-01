@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="css/estiloXML2.css" ?>
+<historial>
+  <alumno nombre="Perez Arana Guillermo Eduardo" clave="001">Perez Arana Guillermo Eduardo<!----><?informacion Procesando un xml de prueba?></alumno>
+  <materia clave="100">
+    <descripcion>matematicas</descripcion>
+    <calificacion>10</calificacion>
+    <semestre>1</semestre>
+    <anios>2020</anios>
+    <secuencia>1</secuencia>
+    <grupo>800</grupo>
+  </materia>
+  <materia clave="200">
+    <descripcion>fisica</descripcion>
+    <calificacion>8</calificacion>
+    <semestre>1</semestre>
+    <anios>2020</anios>
+    <secuencia>3</secuencia>
+    <grupo>800</grupo>
+  </materia>
+  <materia clave="300">
+    <descripcion>historia</descripcion>
+    <calificacion>7</calificacion>
+    <semestre>1</semestre>
+    <anios>2020</anios>
+    <secuencia>4</secuencia>
+    <grupo>800</grupo>
+  </materia><![CDATA[<h1>este texto no sera analizado</h1>]]></historial>

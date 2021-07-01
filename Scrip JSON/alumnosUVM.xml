@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="css/estiloXML.css" ?>
+
+<uvmcoyoacan>
+
+	<alumno cvealumno ="1" estatus="1">
+		<nombre>Daniel</nombre>
+		<appaterno>Cervantes</appaterno>
+		<apmaterno>Saavedra</apmaterno>
+		<foto>daniel.jpg</foto>
+		<fechaalta>2020/01/12</fechaalta>
+	</alumno>
+
+		<alumno cvealumno ="2" estatus="1">
+		<nombre>Carolina</nombre>
+		<appaterno>Torres</appaterno>
+		<apmaterno>Mejia</apmaterno>
+		<foto>carolina.jpg</foto>
+		<fechaalta>2020/01/13</fechaalta>
+	</alumno>
+
+		<alumno cvealumno ="3" estatus="1">
+		<nombre>Maria</nombre>
+		<appaterno>Granados</appaterno>
+		<apmaterno>Mendoza</apmaterno>
+		<foto>maria.jpg</foto>
+		<fechaalta>2020/01/14</fechaalta>
+	</alumno>
+
+	<alumno cvealumno ="4" estatus="1">
+		<nombre>Lourdes</nombre>
+		<appaterno>Rios</appaterno>
+		<apmaterno>Arias</apmaterno>
+		<foto>lourdes.jpg</foto>
+		<fechaalta>2020/01/15</fechaalta>
+
+	</alumno>
+
+		<alumno cvealumno ="5" estatus="1">
+		<nombre>Guillermo</nombre>
+		<appaterno>Perez</appaterno>
+		<apmaterno>Arana</apmaterno>
+		<foto>guillermo.jpg</foto>
+		<fechaalta>2020/03/24</fechaalta>
+
+	</alumno>
+	</uvmcoyoacan>
+

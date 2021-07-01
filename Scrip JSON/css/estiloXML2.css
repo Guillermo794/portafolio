@@ -1,0 +1,26 @@
+uvmcoyoacan{
+
+	background-color: #333333;
+	width: 90%;
+
+
+}
+
+materia{
+
+	background-color: #CCFFFF;
+	display: block;
+	padding: 10px;
+	margin: 10px;
+	width: 200%;
+	height: 1.5em;
+}
+
+ alumno,clave, calificacion, semestre, anio, secuencia, grupo{
+  padding-left: 10px;
+  color: blue;
+  font-size: 100%;
+  border-spacing: 30px;
+  border: black 1px solid;
+  height: 80em;
+}   

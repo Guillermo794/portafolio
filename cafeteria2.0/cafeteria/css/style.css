@@ -1,0 +1,508 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /** 1rem = 10px **/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+    background: rgb(242, 232, 205);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(242, 232, 205, 1) 11%, rgba(247, 231, 158, 1) 30%, rgba(242, 232, 205, 1) 71%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(242, 232, 205, 1) 11%, rgba(247, 231, 158, 1) 30%, rgba(242, 232, 205, 1) 71%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(242, 232, 205, 1) 11%, rgba(247, 231, 158, 1) 30%, rgba(242, 232, 205, 1) 71%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f2e8cd', endColorstr='#f2e8cd', GradientType=0);
+    /* IE6-9 */
+}
+
+
+/** Globales **/
+
+.contenedor {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'PT Sans', sans-serif;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 4rem !important;
+    line-height: 1.2;
+    margin: 2rem 0 !important;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h4 {
+    font-size: 2.8rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/** Utilidades **/
+
+.centrar-texto {
+    text-align: center;
+
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.seleccionado{
+    border: 2px solid rgb(252, 113, 0);
+    border-radius: 1rem;
+    
+}
+.seleccionado span{
+    color: chocolate;
+}
+
+/** Grid **/
+
+@media (min-width: 768px) {
+    .grid {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .centrar-columnas {
+        justify-content: center;
+    }
+    .columnas-4 {
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+    .columnas-6 {
+        flex: 0 0 calc(50% - 1rem);
+    }
+    .columnas-8 {
+        flex: 0 0 calc(66.6% - 1rem);
+    }
+    .columnas-10 {
+        flex: 0 0 calc(83.3% - 1rem);
+    }
+    .columnas-12 {
+        flex: 0 0 100%;
+    }
+}
+
+
+/** Botones **/
+
+.btn {
+    display: block;
+    text-align: center;
+    padding: 1rem 3rem;
+    margin: 2rem 0;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2rem;
+    flex: 0 0 100%;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .btn {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+
+.btn-primario {
+    background-color: #000000;
+}
+
+.btn-secundario {
+    background-color: #784d3c;
+}
+
+
+/** Header **/
+
+.barra img {
+    display: block;
+    margin: auto;
+    width: 150px;
+    background-color: #000000;
+    
+}
+
+@media (min-width:790px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.88);
+        border-radius: 4rem;
+    }
+    .barra img {
+        width: 150px;
+        height: 100px;
+        margin: 0;
+        padding: 0 0 0 2rem;
+        background-color: transparent;
+        
+    }
+    .navegacion a {
+        color: white;
+    }
+}
+
+.site-header {
+    background-image: url(../img/fondo.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.site-header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.site-header h1 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.site-header h1 span {
+    font-weight: 700;
+}
+
+
+/** Navegacion **/
+
+.navegacion a {
+    text-align: center;
+    display: block;
+    font-size: 2.3rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@media (min-width: 790px) {
+    .navegacion a {
+        display: inline;
+        margin-right: 3rem;
+        justify-content: flex-end;
+        padding: 1.7rem;
+    }
+    .navegacion a:hover {
+        color: rgb(155, 103, 44);
+    }
+}
+
+
+/** header texto **/
+
+.texto-header {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.resaltado {
+    color: rgb(240, 159, 66);
+}
+
+.texto-verde {
+    color: rgb(75, 129, 21);
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 1rem;
+    text-align: justify;
+}
+
+.texto-verde-oscuro {
+    color: rgb(102, 87, 20);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.resaltado-body {
+    color: rgb(133, 71, 1);
+    
+}
+
+@media (min-width: 768px) {
+    .texto-header {
+        margin-top: 15rem;
+    }
+    .texto-header h2 {
+        font-size: 5rem;
+    }
+}
+
+.texto-header p {
+    font-size: 3.5rem;
+    line-height: 30px;
+}
+.texto-header p{
+    font-size: 2.5rem;
+}
+
+
+/** Contenido Principal HOME **/
+
+.contenido-principal {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog,
+.menus {
+    flex: 0 0 100%;
+}
+
+.menus {
+    order: -1;
+}
+
+@media (min-width: 768px) {
+    .contenido-principal {
+        justify-content: space-between;
+    }
+    .blog {
+        flex-basis: 66.6%;
+    }
+    .menus {
+        flex-basis: calc(33.3% - 4rem);
+        order: 2;
+    }
+}
+
+.imagen img{
+    height: 20rem;
+    width: 30rem;
+    padding:  0 0 2rem 0 ;
+}
+/** Opcional **/
+
+@media (min-width: 960px){
+    .entrada-blog{
+     
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #000000;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    
+    }
+    .entrada-blog h3{
+        margin: 0;
+        text-align: justify;
+    }
+    .contenido-blog h3, p{
+        margin: 0 0 0 2rem;
+       
+    }
+}
+
+.entrada-blog h3{
+    margin: 0;
+    font-size: 2.5rem;
+}  
+    
+
+
+
+.entrada-blog:last-of-type {
+    border: none;
+}
+
+
+/** Menú Sidebar **/
+
+.menu-lista {
+    padding: 0;
+    list-style: none;
+}
+
+.menu {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #000000;
+}
+
+.menu:last-of-type {
+    border-bottom: none;
+}
+
+.menu p {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.menu p span,
+.menu p.descripcion {
+    font-weight: 400;
+}
+
+.menu img {
+    width: 500px;
+    height: 300px;
+}
+
+
+/** Footer **/
+
+.site-footer {
+    background-color: #000000;
+    padding: 3rem;
+    margin-top: 4rem;
+}
+
+.site-footer p {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+}
+
+.site-footer p span {
+    font-weight: 700;
+}
+.red-social img{
+    width: 6rem;
+    height: 6rem;
+}
+
+
+/** Contacto **/
+
+.formulario-contacto {
+    background-color: #ffffff;
+    padding: 3rem;
+}
+
+@media (min-width: 768px) {
+    .formulario-contacto {
+        margin-top: -30rem;
+    }
+}
+
+.formulario-contacto .campo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.formulario-contacto .campo label {
+    flex: 0 0 8rem;
+}
+
+.formulario-contacto .campo input:not([type="submit"]),
+.formulario-contacto textarea {
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+}
+
+.formulario-contacto textarea {
+    height: 7rem;
+}
+
+.formulario-contacto .enviar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sucursales h2{
+    border-bottom: 5px solid #c4660e;
+}
+@media (min-width: 768px) {
+    .direccion{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .direccion iframe{
+        margin-left: 1rem;
+    }
+    .direccion p{
+        margin-left: 0;
+    }
+    .direccion p span{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+.direccion iframe{
+    width: 98%;
+    height: 30rem;
+}
+
+/*MENÚ*/
+
+#items p{
+    font-size: 1.3rem;
+  
+}
+#items h5{
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+
+#items img{
+    width: 100%;
+}
+#items .btn-primary{
+    width: 10rem;
+    height: 4rem;
+    font-size: 2.5rem;
+    margin: 0 4rem;
+    padding: 0;
+    
+}
+
+.carrito{
+    font-size: 3rem;
+    color: rgb(133, 71, 1);
+}
+.text-right{
+    font-size: 2rem;
+}
+#boton-vaciar{
+    font-size: 1.5rem;
+}
+ .btn-danger-confirmar{
+width: 15rem;
+height: 3.2rem;
+background-color: #dc3545;
+    border-color: #dc3545;
+    font-size: 1.5rem !important;
+}
+

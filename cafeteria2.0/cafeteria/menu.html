@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Café Jarocho | Menú</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <header class="site-header">
+        <div class="contenedor">
+            <br>
+            <div class="barra">
+                <a href="/">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <nav class="navegacion">
+                    <a href="index.html">Inicio</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a class="seleccionado" href="menu.html"> <span> Menú </span></a>
+                    <a href="contacto.html">Contacto</a>
+
+                </nav>
+            </div>
+            <!--Barra-->
+
+
+        </div>
+        <!--contenedor-->
+        <div class="texto-header">
+            <h2 class="no-margin "> Nuestros productos</h2>
+            <p class="no-margin"><span class="resaltado">El aroma de coyoácan</span> </p>
+        </div>
+
+    </header>
+
+    <main class="contenedor">
+
+
+        <h2 class="centrar-texto resaltado-body ">Nuestros Productos Preferidos del mes</h2>
+        <div class="container">
+            <div class="row">
+                <!-- Elementos generados a partir del JSON -->
+                <main id="items" class="col-sm-8 row"></main>
+                <!-- Carrito -->
+                <aside class="col-sm-4">
+                    <h2 class="carrito">Carrito</h2>
+                    <!-- Elementos del carrito -->
+                    <ul id="carrito" class="list-group"></ul>
+                    <hr>
+                    <!-- Precio total -->
+                    <p class="text-right">Total: &dollar;<span id="total"></span></p>
+                    <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+
+
+                    <button class="btn btn-danger-confirmar" onclick="alerta()">Confirmar Pedido</button>
+                   
+                   <h2 id="boton-confirmar" ></h2>
+                    
+                </aside>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a href="/">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <p>Café El Jarocho. Todos los derechos reservados &copy;2021 <br> contacto@cafeeljarocho.com </p>
+
+                <a class="red-social" href="https://www.facebook.com/cafeljarocho" target="_blank">
+                    <img src="img/facebook.svg" alt="Facebook">
+                </a>
+
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="js/carrito.js"></script>
+</body>
+
+</html>

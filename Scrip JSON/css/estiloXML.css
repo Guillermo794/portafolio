@@ -1,0 +1,22 @@
+uvmcoyoacan{
+
+	background-color: #333333;
+	width: 90%;
+
+}
+
+alumno{
+
+	background-color: #CCFFFF;
+	display: block;
+	padding: 10px;
+	margin: 10px;
+	width: 100%;
+}
+fechaalta::after{
+
+	content: ";"
+}
+nombre,appaterno,apmaterno{
+	display: inline-block;
+}

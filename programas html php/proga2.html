@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Base</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<style type="text/css">
+		body {
+			padding: 40px;
+			font-size: 20px;
+			font-family: helvetica;
+		}
+	</style>
+	<script type="text/javascript">
+
+		var normal = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '1', '2', '3', '4', '5', '6', '7', '8','9', '0', ',', '.', ' ']
+		var atbash = ['Z', 'Y', 'X', 'W', 'V', 'U', 'T', 'S', 'R', 'Q', 'P', 'O', 'N', 'M', 'L', 'K', 'J', 'I', 'H', 'G', 'F', 'E', 'D', 'C', 'B', 'A', '1', '2', '3', '4', '5', '6', '7', '8','9', '0', ',', '.', ' ']
+
+		mensaje_real = "N3mh4qv xruizwl s0o4. nfmwl,";
+		mensaje = mensaje_real.toUpperCase();
+		var cifrado = "";
+
+			for (letra = 0; letra < mensaje.length; letra++) {
+			letra_mensaje = mensaje.charAt(letra);
+			posicion_alfabe = normal.indexOf(letra_mensaje);
+			if(letra==0){
+				cifrado = cifrado + atbash[posicion_alfabe].toUpperCase();
+			}else{
+				cifrado = cifrado + atbash[posicion_alfabe].toLowerCase();
+			}
+			
+		}
+		document.write("Mensaje normal: " + mensaje_real + "<br>");
+		document.write("<br> Mensaje cifrado: " + cifrado + "<br>");
+	</script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
